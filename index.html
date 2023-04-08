@@ -31,10 +31,12 @@
             <h1>Diet Sehat, <br>Gizi Seimbang</h1>
             <p>Diet sesuai pola makan untuk memenuhi angka kebutuhan gizi dan dapatkan tubuh ideal mu. <br> Pilih
                 makanan sehatmu dan control diet-mu sekarang!</p>
-            <div class="form-box">
-                <input type="text" name="" placeholder="Masukan Email Anda">
-                <button type="submit" class="btn">Subscribe</button>
-            </div>
+            <form method="post" id="form1">
+                <div class="form-box">
+                    <input type="text" name="email" id="email" placeholder="Masukan Email Anda">
+                    <button type="submit" name="" value="Subscribe" class="btn" onclick="subcribe()">Subscribe</button>
+                </div>
+            </form>
         </div>
         <div class="main-pic">
             <img src="/assets/img/main-pic.png" />
@@ -171,7 +173,17 @@
     </footer>
 
     <!-- Javascript -->
-    <script src="/js/script.js"></script>
+    <script type="text/javascript">
+        function subcribe() {
+            name = document.forms["form1"]["email"].value;
+
+            if (name == "") {
+                alert("⚠ Please Enter Email for Subcribe")
+            } else {
+                alert("Check Your Email for Validation ✅‼")
+            }
+        }
+    </script>
 </body>
 
 </html>
