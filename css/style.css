@@ -1,3 +1,4 @@
+/* Tambahkan kode CSS kalian di file ini */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sofia&display=swap');
 
 /* CSS Reset  */
@@ -238,7 +239,7 @@ a {
     transition: all 0.3s ease;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 5px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .box-artikel .box:hover {
@@ -278,6 +279,78 @@ a {
     background-color: #88E169;
     transition: all 0.3s ease;
 }
+
+/* Form Section  */
+/* Style untuk form section */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Style untuk form-box */
+.form-box {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style untuk heading */
+.heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style untuk input field */
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style untuk checkbox dan label */
+#check {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#status {
+    margin-right: 5px;
+}
+
+/* Style untuk button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #FFF;
+    background-color: #389E0D;
+}
+
+/* Style untuk warning */
+#warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
 
 /* Footer Section  */
 .footer {
